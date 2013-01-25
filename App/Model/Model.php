@@ -13,7 +13,6 @@ class Model
     {
         $str = "'".$str."'";
         return $str;
-
     }
 
     public function __construct()
@@ -41,8 +40,8 @@ class Model
         $_data = $this->db->fetchRow($sql);
         $this->data = array_merge($this->data, $_data);
 
-        return $this;
-    }
+        return $this
+;    }
 
     protected function createSet()
     {
