@@ -5,9 +5,18 @@ namespace Model;
 class GleisAbschnittRichtungDefinitionModel extends Model
 {
     protected $table = 'GleisAbschnittRichtungDefinition_Tab';
+    protected $id = 'GARD_ID';
+    protected $data;
 
-    protected $GARD_ID;
-    protected $Abschnitt_ID;
-    protected $Richtung;
-    protected $StartPunkt_ID;
+    public function __construct()
+    {
+        $this->data = array(
+            'GARD_ID'       => null,
+            'Abschnitt_ID'  => null,
+            'Richtung'      => null,
+            'StartPunkt_ID' => null
+        );
+
+        parent::__construct();
+    }
 }

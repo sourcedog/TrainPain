@@ -4,8 +4,17 @@ namespace Model;
 
 class AnschlussGleisAbschnittRichtungDefinitionModel extends Model
 {
-    protected $table = 'Anschluss_Tab';
+    protected $table = 'Anschluss_Tab'
+    protected $id = 'GARD_ID';
+    protected $data;
 
-    protected $GARD_ID;
-    protected $AGARD_ID;
+    public function __construct()
+    {
+        $this->data = array(
+            'GARD_ID' => null,
+            'AGARD_ID' => null
+        );
+
+        parent::__construct();
+    }
 }

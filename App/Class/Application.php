@@ -42,7 +42,16 @@ class Application extends Clix\Clix
             )
         )->save();
 
+        $test2 = new Model\AbschnittModel();
+        $test2->set(
+            array(
+                'AbschnittName' => 'Dies ist ein Abschnitt'
+            )
+        )->save();
+
         Debug::print_r($test);
+
+        Debug::print_r($test2);
     }
 
     protected function setPageTitle($suffix = '')

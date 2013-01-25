@@ -6,6 +6,7 @@ class PunktModel extends Model
 {
     protected $table = 'Punkt_Tab';
     protected $id = 'P_ID';
+    protected $data;
 
     public function __construct()
     {
